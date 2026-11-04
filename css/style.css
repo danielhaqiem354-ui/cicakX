@@ -14,12 +14,64 @@ main {
     flex-grow: 1;
 }
 
-/* Navigation Bar */
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
 .navbar {
     border-bottom: 3px solid #C62828;
 }
 
-/* Hero Section */
+.navbar .nav-link {
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+/* Hover Effect */
+.navbar .nav-link:hover {
+    background-color: #8B0000;
+    color: white !important;
+}
+
+/* Home - Red by Default */
+.navbar .nav-link[href="#home"] {
+    background-color: #C62828 !important;
+    color: white !important;
+}
+
+/* Remove Home Highlight When Founder Selected */
+body:has(#founder:target) .navbar .nav-link[href="#home"] {
+    background-color: transparent !important;
+    color: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* Founder - Red When Selected */
+body:has(#founder:target) .navbar .nav-link[href="#founder"] {
+    background-color: #C62828 !important;
+    color: white !important;
+}
+
+/* Kiosk - Red When Active */
+.navbar .nav-link.active {
+    background-color: #C62828 !important;
+    color: white !important;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+#founder {
+    scroll-margin-top: 85px;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
 .hero-section {
     position: relative;
     overflow: hidden;
@@ -43,13 +95,16 @@ main {
     color: #ff3333;
 }
 
-/* Card Style */
+
+/* =========================
+   CARD AND BUTTONS
+========================= */
+
 .form-card {
     border: none;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Buttons */
 .btn-primary {
     background-color: #C62828;
     border-color: #C62828;
