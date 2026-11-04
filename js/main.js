@@ -101,13 +101,15 @@ function calculateSubscription(customerName, email, packagePrice, duration) {
     // 1 Identify Package
     let packageName = "";
 
+ 
     if (packagePrice === 50) {
-        packageName = "Sidekick";
+        packageName = "Mask & Gloves";
     } else if (packagePrice === 100) {
-        packageName = "Hero";
+        packageName = "Superhero suit";
     } else {
-        packageName = "Legend";
+        packageName = "Complete Hero Equipment";
     }
+
 
     // 2 Calculate Subtotal
     let subtotal = packagePrice * duration;
