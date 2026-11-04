@@ -16,7 +16,7 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             
         <a class="navbar-brand fw-bold fst-italic" href="index.html">
@@ -34,20 +34,29 @@
             </button>
 
             <div class="collapse navbar-collapse" id="mainNavbar">
+
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">  
-                    <a class="nav-link active bg-danger text-white rounded px-3"href="index.html">Founder</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#founder">Founder</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="kiosk.html">Kiosk</a>
                     </li>
+
                 </ul>
+
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section founder-hero text-center text-white p-5">
+    <header id="home" class="hero-section founder-hero text-center text-white p-5">
         <div class="container">
             <h1 class="display-4">Welcome to Cicak<span class="brand-x">X</span></h1>
             <p class="lead">Exclusive. Power Up. Support Local.</p>
@@ -57,7 +66,7 @@
 
     
 <!-- Main Content -->
-<main class="container my-5">
+<main id="founder" class="container my-5">
 
     <div class="text-center mb-4">
         <h2 class="fw-bold">Meet the Founder</h2>
